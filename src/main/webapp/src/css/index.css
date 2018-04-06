@@ -1,0 +1,16 @@
+.clearFix{
+    clear: both;
+}
+@media (max-width : 768px) 
+{/* aplique a moin de 767*/
+    #Menu{
+        
+    }
+}
+@media (min-width : 769) 
+{/* aplique a plus de 767*/
+    
+    #Menu{
+        
+    }
+}
