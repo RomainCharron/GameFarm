@@ -1,6 +1,6 @@
 <%-- 
-    Document   : menu
-    Created on : 3 avr. 2018, 12:26:38
+    Document   : menuAdmin
+    Created on : 6 avr. 2018, 15:54:12
     Author     : Formation
 --%>
             <div id="Menu">
@@ -9,4 +9,4 @@
                     <li>Pas de page Disônible</li><!-- -->
 
                 </ul>
-            </div>
+            </div>>
