@@ -4,7 +4,7 @@
     Author     : Formation
 --%>
             <div id="Menu">
-                <h2>Administration</h2>
+                <h2>Index</h2>
                 <ul>
                     <!--<li><a href="pageFormation/">pageFormation</a></li><!-- -->
                     <li>Pas de page Disônible</li><!-- -->
