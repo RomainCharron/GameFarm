@@ -45,5 +45,11 @@ Contributor(s):
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bd_wit_gaia</property>
     <property name="hibernate.connection.username">root</property>
+    <mapping resource="com/m2i/charron/web/gamefarm/Hibernate/Refressours.hbm.xml"/>
+    <mapping resource="com/m2i/charron/web/gamefarm/Hibernate/Typeressource.hbm.xml"/>
+    <mapping resource="com/m2i/charron/web/gamefarm/Hibernate/Exploitation.hbm.xml"/>
+    <mapping resource="com/m2i/charron/web/gamefarm/Hibernate/Joueur.hbm.xml"/>
+    <mapping resource="com/m2i/charron/web/gamefarm/Hibernate/Partie.hbm.xml"/>
+    <mapping resource="com/m2i/charron/web/gamefarm/Hibernate/Refjoueur.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

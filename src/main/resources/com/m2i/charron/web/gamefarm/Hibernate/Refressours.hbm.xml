@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 avr. 2018 14:38:31 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.m2i.charron.web.gamefarm.Hibernate.Refressours" table="refressours" catalog="bd_wit_gaia" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="joueur" class="com.m2i.charron.web.gamefarm.Hibernate.Joueur" fetch="select">
+            <column name="IDJoueur" not-null="true" />
+        </many-to-one>
+        <many-to-one name="partie" class="com.m2i.charron.web.gamefarm.Hibernate.Partie" fetch="select">
+            <column name="IDPartie" not-null="true" />
+        </many-to-one>
+        <many-to-one name="typeressource" class="com.m2i.charron.web.gamefarm.Hibernate.Typeressource" fetch="select">
+            <column name="IDRessource" not-null="true" />
+        </many-to-one>
+        <property name="qtR" type="int">
+            <column name="QtR" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

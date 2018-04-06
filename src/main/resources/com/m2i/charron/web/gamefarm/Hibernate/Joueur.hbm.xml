@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 avr. 2018 14:38:31 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.m2i.charron.web.gamefarm.Hibernate.Joueur" table="joueur" catalog="bd_wit_gaia" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="pseudo" type="string">
+            <column name="Pseudo" length="50" not-null="true" />
+        </property>
+        <set name="exploitations" table="exploitation" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="IDJoueur" not-null="true" />
+            </key>
+            <one-to-many class="com.m2i.charron.web.gamefarm.Hibernate.Exploitation" />
+        </set>
+        <set name="refressourses" table="refressours" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="IDJoueur" not-null="true" />
+            </key>
+            <one-to-many class="com.m2i.charron.web.gamefarm.Hibernate.Refressours" />
+        </set>
+        <set name="refjoueurs" table="refjoueur" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="IDJoueur" not-null="true" />
+            </key>
+            <one-to-many class="com.m2i.charron.web.gamefarm.Hibernate.Refjoueur" />
+        </set>
+    </class>
+</hibernate-mapping>
